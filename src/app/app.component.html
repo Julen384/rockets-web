@@ -3,7 +3,9 @@
     <div class="item" *ngFor="let item of data">
       <h1> {{ item.name }} </h1>
       <p> {{ item.description }} </p>
-      <img [src]="img" alt="" *ngFor="let img of item.flickr_images">
+      <div class="imgs">
+        <img [src]="img" alt="" *ngFor="let img of item.flickr_images">
+      </div>
     </div>
   </div>
 </div>
